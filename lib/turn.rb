@@ -42,7 +42,7 @@ end
 
 def valid_move?(board, index)
 
-  if equal?.index -1
+  if index.equal?. -1
     position = 0
   else
     position = index
