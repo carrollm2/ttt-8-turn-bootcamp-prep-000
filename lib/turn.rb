@@ -43,8 +43,8 @@ end
 def valid_move?(board, index)
 
   if index.between?(0, 8)
-    print "test", index
     if position_taken?(board, index) == false
+      print "should be evaluating to true"
       return true
     else
       return false
