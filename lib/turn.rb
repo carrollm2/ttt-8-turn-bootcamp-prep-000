@@ -9,10 +9,8 @@ def turn(board)
     index = input_to_index(input)
   end
 
-  if valid_move?(board, index) == true
-    move(board, index, "X")
-    display_board(board)
-  end
+  move(board, index, "X")
+  display_board(board)
 end
 
 def display_board(board)
