@@ -42,8 +42,14 @@ end
 
 def valid_move?(board, index)
 
+  if equal?.index -1
+    position = 0
+  else
+    position = index
+  end
+
   if index.between?(0, 8)
-    if position_taken?(board, index) == false
+    if position_taken?(board, position) == false
       return true
     else
       return false
