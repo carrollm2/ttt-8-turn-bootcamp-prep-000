@@ -10,7 +10,7 @@ def turn(board)
   end
 
   if valid_move?(board, index) == true
-    move(board, index, current_player)
+    move(board, index, "X")
     display_board(board)
   end
 end
