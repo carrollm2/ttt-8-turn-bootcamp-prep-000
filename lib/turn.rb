@@ -25,7 +25,7 @@ end
 
 # code your input_to_index and move method here!
 def input_to_index(gets)
-  index = gets.to_i - 1
+  index = [0, gets.to_i - 1].max
 end
 
 def move(board, index, value = "X")
